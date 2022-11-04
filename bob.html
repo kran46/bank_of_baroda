@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ik.imagekit.io/theepictechie/Nuronics_Images/nuro-logo-white_mJ-ocujkv.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1656152924716"
+    />
+
+    <title>Nuronics!</title>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------Body Styling Start------------------- */
+
+body{
+    background-image: url(https://ik.imagekit.io/theepictechie/Nuronics_Images/heroshape_pMn6-NSnB.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1655100158223),
+    radial-gradient(
+          circle at right bottom,
+          rgba(238, 243, 247, 1) 0%,
+          rgba(238, 243, 247, 1) 30%,
+          rgba(230, 233, 241, 1) 40%,
+          rgba(230, 233, 241, 1) 100%
+        );
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    min-width: calc(100vw - 2rem);
+    display: grid;
+    grid-template-columns: var(--primary-width);
+    grid-template-rows: 10rem 1fr 6rem;
+    justify-content: center;
+}
+
+/* -----------------Body Styling End------------------- */
+
+
+/* -----------------Header Styling Start------------------- */
+
+
+header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+header img{
+    height: 4rem;
+    margin: 2rem 0;
+}
+
+/* -----------------Header Styling End------------------- */
+
+/* -----------------Main Styling Start------------------- */
+/* 
+main{    
+    align-self: center;
+    box-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.20);
+    border-radius: 1.6rem;
+    overflow: hidden;
+} */
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.20rem;
+    margin: 0 auto;
+    text-align: center;
+    /* font-family: serif; */
+
+    
+}
+h2 {
+    font-size: 1.0rem;
+    text-align: left;
+    color: green;
+}
+
+
+
+/* -----------------Main Styling End------------------- */
+
+
+/* -----------------Page Title Styling Start------------------- */
+
+.pagetitle {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.20);
+    position: relative;
+    
+}
+
+.pagetitle img {
+    height: 3rem;
+}
+
+/* -----------------Page Title Styling End------------------- */
+
+
+/* -----------------Container Styling Start------------------- */
+
+.container{    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+       
+    background: #ffffff;
+    padding: 4rem;    
+    padding-top: 1.5rem; 
+    /* Remove this height property if you need full page scroll */
+    height: calc(100vh - 22rem);
+    /* Enable this overflow-y property if you need Scroll for only container */
+    /* overflow-y: scroll; */
+
+    
+}
+
+
+/* -----------------Footer Styling Start------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: 6rem;
+}
+/* -----------------Footer Styling End------------------- */
+
+/* -----------------Media Query Start------------------- */
+
+@media only screen and (max-width:319px)  { body {grid-template-columns: 38rem;}}
+@media only screen and (min-width:320px) and (max-width:767px)  { body {grid-template-columns: 38rem} }
+@media only screen and (min-width:768px) and (max-width:1023px)  { body {grid-template-columns: 72rem;} }
+@media only screen and (min-width:1024px) and (max-width:1899px) { body {grid-template-columns: 106rem;} }
+@media only screen and (min-width:1900px) { body {grid-template-columns: 140rem;} }
+
+/* -----------------Media Query End------------------- */
+
+
+
+
+/* -------------Scrollbar Styling Start------------- */
+
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(146, 119, 228, 0.219) ;
+}
+  
+ body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgb(146, 119, 228);
+}
+  
+
+body::-webkit-scrollbar:window-inactive {
+    width: 1px;
+    height: 1px;
+}
+
+
+
+
+
+.container::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+.container::-webkit-scrollbar-track {
+    background: rgba(146, 119, 228, 0.219) ;
+}
+  
+.container::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgb(146, 119, 228);
+}
+
+.container::-webkit-scrollbar:window-inactive {
+    width: 1px;
+    height: 1px;
+} 
+
+/* -------------Scrollbar Styling End------------- */
+
+/* Styling for Template Ends here,................. */
+
+</style>
+
+
+    <style type="text/css">
+
+        /*---------------------------MESSANGER STYLING ----------------- */
+          .msger {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1.3em;
+            /*max-width: 867px;*/
+            /*margin: 25px 10px;*/
+            height: calc(100% - 0px);
+            border: var(--border);
+            border-radius: 5px;
+            background: var(--msger-bg);
+            box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+          }
+
+     
+        .msger-chat {
+          flex: 1;
+          overflow-y: auto;
+          padding: 10px;
+        }
+        .msger-chat::-webkit-scrollbar {
+          width: 6px;
+        }
+        .msger-chat::-webkit-scrollbar-track {
+          background: #ddd;
+        }
+        .msger-chat::-webkit-scrollbar-thumb {
+          background: #bdbdbd;
+        }
+        .msg {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 10px;
+        }
+
+        .msg-img {
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+          /*background: #ddd;*/
+          border: solid 0.6px lightblue;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 50%;
+        }
+        .msg-bubble {
+          max-width: 450px;
+          padding: 15px;
+          border-radius: 15px;
+          background: var(--left-msg-bg);
+        }
+        .msg-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        .msg-info-name {
+          margin-right: 13px;
+          font-weight: bold;
+        }
+        .msg-info-time {
+          font-size: 0.85em;
+        }
+
+        .left-msg .msg-bubble {
+          border-bottom-left-radius: 0;
+        }
+
+        .right-msg {
+          flex-direction: row-reverse;
+        }
+        .right-msg .msg-bubble {
+          background: var(--right-msg-bg);
+          color: #fff;
+          border-bottom-right-radius: 0;
+        }
+        .right-msg .msg-img {
+          margin: 0 0 0 10px;
+        }
+
+        .msger-inputarea {
+          display: flex;
+          padding: 5px;
+          border-top: var(--border);
+          /*background: #eee;*/
+        }
+        .msger-inputarea * {
+          padding: 10px;
+          border: none;
+          border-radius: 3px;
+          font-size: 1.3em;
+        }
+        .msger-input {
+          flex: 1;
+          background: #f2f4f5;
+          outline: none;
+
+        }
+        .msger-send-btn {
+          margin-left: 10px;
+          background: #6f4ae5;
+          color: #fff;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.23s;
+        }
+        .msger-send-btn:hover {
+          background: #563ab2;
+        }
+
+
+        .url-msger-send-btn {
+          margin-left: 10px;
+          background: #6f4ae5;
+          color: #fff;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.23s;
+        }
+        .url-msger-send-btn:hover {
+          background: #563ab2;
+        }
+
+
+        .chat-header{
+          background-color: #6f4ae5;
+        }
+        
+
+        .msger-chat {
+          background: #fff;
+          
+        }
+        .self {
+          background: #6f4ae5;
+          float: right;
+          clear: both;
+          color: #fff;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          max-width: 65%;
+        }
+
+        .other {
+          background: #cedef1;
+          float: left;
+          clear: both;
+          color: black;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+
+          padding: 5px;
+          margin-bottom: 12px !important;
+          padding-right: 20px !important;
+          max-width: 65%;
+        }
+        #url-chat-box-list{
+          height: 350px;
+          /*overflow-x: auto; */
+          overflow-y: auto;
+
+        }
+        #chat-box-list{
+          height: 350px;
+          /*overflow-x: auto; */
+          overflow-y: auto;
+        }
+    </style>
+  </head>
+  <body>
+           <!--- Response block------->
+           <header>
+            <img
+              src="https://speech.nuronics.com/png/Group%202521.png"
+              alt="Nuronics Logo"
+            />
+            <img src="" alt="" />
+          </header>
+          <main>
+            <div class="pagetitle">
+              <!-- Please specify you Tool Title here -->
+              
+                <div class="card-header  fw-bold">
+                  <i class="fas fa-comments"></i>&nbsp;CHAT <button class="rounded btn btn-sm bg-dark text-white" id="resetChat2"><i class="fas fa-redo"></i></button>
+                  <span class="float-end p-1">
+                    <span class="text-success" id="chatInputMessage">...</span>
+                  </span>
+                </div>
+      
+              <img
+                src="https://ik.imagekit.io/theepictechie/Nuronics_Images/nuroBlack_-1SEJ7sE4.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1654247323962"
+                alt="nuro logo"
+              />
+            </div>
+            <div class="">
+              <!-- -------------------- S T A R T   Y O U R   C O D E   H E R E  ----------------------- -->
+              <div class="row ">
+                <!----OCR BLOCK----->
+                  <div class="" >
+                      <div id="chatBlock" class="content-block">
+                        <section class="msger">
+                          <main class="msger-chat">
+                            <div class="">
+                             
+                                <li style="list-style: none;" class="border-info mb-2" id="learned-msg-fileupload" hidden="true"><strong>Hey, I have learnt the document/url, ask me questions from it.&nbsp;<i class="far fa-smile"></i></strong></li>
+
+                                <ul style="list-style: none;" id="chat-box-list" class="p-0">
+                              
+                                </ul>
+                              <!-- </div> -->
+                            </div>
+                          </main>
+                          <div class="msger-inputarea" style="position: relative">
+                            <div class="spinner-grow spinner-grow-sm" id="voiceSpinner" role="status" hidden="true" style="position:absolute; top: 0px; left: 20px;">
+                                <span class="visually-hidden"></span>
+                            </div>
+                            <button class="" id="ASRLiveRecordButton"><i class="fas fa-microphone"></i></button>
+                            <button class="" id="ASRLiveStopButton" hidden="true"><i class="fas fa-stop"></i></button>
+                            <!-- <button class="" id="ASRLiveResetButton" hidden="true"><i class="fas fa-redo-alt"></i></button> -->
+
+                            <input type="text" class="ms-2 msger-input" id="questionInput" placeholder="Enter your message...">
+                            <button type="button" id="send_btn" class="msger-send-btn"><i class="fas fa-paper-plane"></i></button>
+                          </div>
+                          <span hidden="true">
+                              <small class="ml-2" id="formats" hidden="true">Format: start recording to see sample rate</small>
+                              <span>
+                                <small  id="timer" hidden="true"><time>00:00:00</time></small>&nbsp;
+                              </span>
+                              <!-- <p class="ml-2"><strong>Recordings:</strong></p> -->
+                          </span>
+                      </section>
+                      </div>
+                  </div>
+              </div>  
+      
+              <!-- -------------------- Y O U R   C O D E   E N D S   H E R E  ----------------------- -->
+            </div>
+          </main>
+          <footer>
+            <h6>© 2022 All rights Reserved. Nuronics Corp.</h6>
+          </footer>
+
+
+
+              
+
+              
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fddbbff120.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <script type="text/javascript">
+      var input = document.getElementById("questionInput");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    console.log("in enter log");
+    // Trigger the button element with a click
+    document.getElementsByClassName("msger-send-btn")[0].click();
+  }
+});
+    </script>
+
+
+
+    <script type="text/javascript">
+      //for asr feature
+      URL = window.URL || window.webkitURL;
+
+      var random_id;
+      var gumStream;            //stream from getUserMedia()
+      var rec;              //Recorder.js object
+      var input;              //MediaStreamAudioSourceNode we'll be recording
+      var source;
+      var processor;
+      var socket;
+      var language;
+
+
+      // shim for AudioContext when it's not avb.
+      var AudioContext = window.AudioContext || window.webkitAudioContext;
+      var audioContext //audio context to help us record
+
+      // var recordButton = document.getElementById("start_button");
+      // var stopButton = document.getElementById("stop_button");
+      var e = document.getElementById("language");
+
+      function randomString(length, chars) {
+          var result = '';
+          var cd = new Date();
+          var date_time = cd.getDate().toString()+cd.getMonth().toString()+cd.getFullYear().toString()+cd.getHours().toString()+cd.getMinutes().toString()+cd.getSeconds().toString()
+          for (var i = length; i > 0; --i) 
+            result += chars[Math.round(Math.random() * (chars.length - 1))];
+          return result+date_time;
+      }
+
+      //changing id in language change
+      function changeId() {
+        random_id  = randomString(16, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        console.log(random_id+">>> this is generated random id on language change")
+      }
+
+      function base64ArrayBuffer(arrayBuffer) {
+      var base64    = ''
+      var encodings = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+
+      var bytes         = new Uint8Array(arrayBuffer)
+      var byteLength    = bytes.byteLength
+      var byteRemainder = byteLength % 3
+      var mainLength    = byteLength - byteRemainder
+
+      var a, b, c, d
+      var chunk
+
+      // Main loop deals with bytes in chunks of 3
+      for (var i = 0; i < mainLength; i = i + 3) {
+        // Combine the three bytes into a single integer
+        chunk = (bytes[i] << 16) | (bytes[i + 1] << 8) | bytes[i + 2]
+
+        // Use bitmasks to extract 6-bit segments from the triplet
+        a = (chunk & 16515072) >> 18 // 16515072 = (2^6 - 1) << 18
+        b = (chunk & 258048)   >> 12 // 258048   = (2^6 - 1) << 12
+        c = (chunk & 4032)     >>  6 // 4032     = (2^6 - 1) << 6
+        d = chunk & 63               // 63       = 2^6 - 1
+
+        // Convert the raw binary segments to the appropriate ASCII encoding
+        base64 += encodings[a] + encodings[b] + encodings[c] + encodings[d]
+      }
+
+      // Deal with the remaining bytes and padding
+      if (byteRemainder == 1) {
+        chunk = bytes[mainLength]
+
+        a = (chunk & 252) >> 2 // 252 = (2^6 - 1) << 2
+
+        // Set the 4 least significant bits to zero
+        b = (chunk & 3)   << 4 // 3   = 2^2 - 1
+
+        base64 += encodings[a] + encodings[b] + '=='
+      } else if (byteRemainder == 2) {
+        chunk = (bytes[mainLength] << 8) | bytes[mainLength + 1]
+
+        a = (chunk & 64512) >> 10 // 64512 = (2^6 - 1) << 10
+        b = (chunk & 1008)  >>  4 // 1008  = (2^6 - 1) << 4
+
+        // Set the 2 least significant bits to zero
+        c = (chunk & 15)    <<  2 // 15    = 2^4 - 1
+
+        base64 += encodings[a] + encodings[b] + encodings[c] + '='
+      }
+
+      return base64
+    }
+
+
+    function convertFloat32ToInt16(buffer) {
+    l = buffer.length
+    buf = new Int16Array(l)
+    while (l--) {
+      buf[l] = Math.min(1, buffer[l]) * 0x7fff
+    }
+    return buf.buffer
+    }
+
+
+    //socket connection function
+    function socketConnection(language){
+
+        console.log("socket called")
+        // sending connected even on connect
+        // console.log("inside start recording "+language.toLowerCase());
+        socket.on('connect', function() {
+          cur_event="connected";
+          data={
+                  "event":cur_event,
+                  "language":language.toLowerCase(),
+                  "payload":"",
+                };
+          socket.send(JSON.stringify(data));
+          console.log("connected event called")
+        });
+
+
+        //getting the socket id
+        socket.on("connect", () => {
+          console.log(socket.id+" >>>socket id"); // x8WIv7-mJelg7on_ALbx
+        });
+
+        socket.on('ping', function () {
+          console.log('PING!');
+        });
+
+        socket.on('pong', function () {
+          console.log('PONG!');
+        });
+
+        socket.on('close', function () {
+          console.log('disconnected');
+        });
+      }
+
+
+      $("#ASRLiveRecordButton").click(function(){
+          console.log("start button clicked")
+          socket = io.connect('https://speech.nuronics.com',{path: "/agent_1"});
+          language = tts_lang = "indian english";
+          console.log("selected language:"+language)
+          socketConnection(language);
+//          setTimeout(function(){
+              startRecording(language);
+             // }, 1000);
+
+          $("#voiceSpinner").attr('hidden', false);
+          $('#ASRLiveStopButton').attr("hidden", false);
+          $('#ASRLiveRecordButton').attr("hidden", true);
+      });
+
+      $("#ASRLiveStopButton").click(function(){
+        console.log("stop button clicked")
+        stopRecording();
+        $("#voiceSpinner").attr('hidden', true);
+        $('#ASRLiveStopButton').attr("hidden", true);
+        // $('#ASRLiveResetButton').attr("hidden", false);
+        $('#ASRLiveRecordButton').attr("hidden", false);
+        $("#process-spinner").attr("hidden", true)
+    });
+
+
+    $("#ASRLiveResetButton").click(function(){
+        console.log("reset button clicked")
+        document.location.reload(true);
+    });
+
+
+
+    function startRecording(language) {
+
+
+        $("#weather_search_icon").attr("hidden", true)
+        console.log("Checking final socket connection is "+socket.connected);
+
+
+        // console.log(cur_event+">>>>>>")
+
+        console.log("now we will recieve voice input in text")
+        socket.on('message', function(msg) {
+            console.log('Received message'+msg);
+            $('#questionInput').val($('#questionInput').val() + msg);
+        });
+
+
+        console.log("asr engine connected");
+        const handleSuccess = function(stream) {
+          
+          // timer();
+
+
+          $("#process-spinner").attr("hidden", false)
+
+          console.log("handle success called")
+
+          const options={
+            sampleRate:16000,
+            sampleSize: 16
+          };
+          //assigning the stream to gumStream
+          gumStream = stream;
+          // console.log(gumStream);
+
+          const context = new AudioContext(options);
+
+          console.log("audioContext object created")
+
+          source = context.createMediaStreamSource(stream);
+          processor = context.createScriptProcessor(1024, 1, 1);
+          var cur_event = "";
+          var stream_data = [];
+
+          rec = new Recorder(source,{numChannels:1})
+          console.log("recording");
+          //start the recording process
+          rec.record();
+          source.connect(processor);
+          processor.connect(context.destination);
+          processor.onaudioprocess = function(e) {
+              cur_event="start";
+
+              stream_data = base64ArrayBuffer(convertFloat32ToInt16(e.inputBuffer.getChannelData(0)));
+      //        console.log(stream_data.substr(0, 8)+"........stream data")
+
+              data={
+                "event":cur_event,
+                "payload":stream_data,
+                "user_id":"static_id_123",
+                "language":language.toLowerCase(),
+              };
+
+              socket.send(JSON.stringify(data));
+     //         console.log("sending stream data to sever")
+              // socket.send(convertFloat32ToInt16(e.inputBuffer.getChannelData(0)));
+          };
+      };
+
+      navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+          .then(handleSuccess)
+          .catch(function(err){
+            console.log("getUserMedia error.")
+          });
+      }
+
+
+      function stopRecording() {
+
+          //stopping the time
+          // clearTimeout(t);
+
+          $("#start-gif").css({'display':'none'});
+          
+
+          // stopButton.disabled = true;
+          // recordButton.disabled = false;
+          console.log("checking if straming in active mode")
+          if (gumStream.active) {
+              // do something with the stream
+              console.log("stream is active")
+
+              gumStream.getAudioTracks()[0].stop();
+              rec.exportWAV(createDownloadLink);
+              console.log("stream is now closed")
+          }
+          
+
+          data={
+            "event":"stop",
+            "payload":"",
+          };
+
+          
+          socket.send(JSON.stringify(data));
+          console.log("sending the stop event to server")
+
+
+          socket.on('connect', function () {
+            socket.disconnect();
+            console.log("closing socket connection triggered")
+          });
+
+
+          setTimeout(function(){
+            processor.disconnect();
+        }, 3000);
+
+          console.log('processor disconnected');
+
+          input_quest = $.trim($("#questionInput").val())
+          if(input_quest===""){
+            alert("Please ask your question")
+            return false;
+          }else{
+            // alert(input_quest);
+            $("#chat-box-list").append(`<li class="mb-2 p-3 self">${input_quest}</li>`);
+            $('#chat-box-list').animate({scrollTop: $('#chat-box-list').prop("scrollHeight")}, 500);
+            $("#questionInput").val("");
+            
+            $.ajax({
+                            url:"https://nlp.nuronics.com:6009/search",
+                                          data:{
+                                            "query":input_quest
+                                          },
+                            type:"POST",
+                            dataType:'json',
+                            beforeSend: function(){
+                                $("#chatInputMessage").text("Fetching answer..")
+                            },
+
+                            success:function(res){
+                              console.log(res);
+                              test_color1 ="#FAFFFE"
+
+                              if(res["Output"].length==0){
+                                appendAns = `<li class="mb-2 p-3 other" style="background-color:FAFFFE; position:relative"><small"> Not relevant question</small></li>`                                
+                                $("#chat-box-list").append(appendAns);
+                              }
+                              else{
+
+                                console.log(res["Output"][0]["answer"])
+
+                                opScore= parseFloat(res["Output"][0]["score"]).toFixed(2);
+                                opAns= res["Output"][0]["answer"];
+
+                                appendAns = `<li class="mb-2 p-3 other" style="background-color:FAFFFE; position:relative"><small style="position: absolute; bottom: 0; right: 0; border-radius: 14px; background-color: #62C106 !important; padding: 2px 5px !important; margin: 0px -10px -10px 0px;" class="p-1 bg-secondary text-white">${opScore}</small><small"> ${opAns}</small></li>`
+
+                                $("#chat-box-list").append(appendAns);
+                                $('#chat-box-list').animate({scrollTop: $('#chat-box-list').prop("scrollHeight")}, 500);
+                                $("#chatInputMessage").text("Answered");
+                              }
+
+                              },
+                            error:function(err){
+                                $("#chatInputMessage").text("Failed to fetch response.");
+                            }
+                });
+
+          }
+          
+          
+        }
+
+
+      function createDownloadLink(blob) {
+
+        var url = URL.createObjectURL(blob);
+        var au = document.createElement('audio');
+        var li = document.createElement('li');
+        var link = document.createElement('a');
+
+        //name of .wav file to use during upload and download (without extendion)
+        var filename = new Date().toISOString();
+
+        //add controls to the <audio> element
+        au.controls = true;
+        au.src = url;
+
+        //save to disk link
+        link.href = url;
+        link.download = filename+".wav"; //download forces the browser to donwload the file using the  filename
+        link.innerHTML = "Save to disk";
+
+        //add the new audio element to li
+        li.appendChild(au);
+        
+        //add the filename to the li
+        li.appendChild(document.createTextNode(filename+".wav "))
+
+        //add the save to disk link to li
+        li.appendChild(link);
+        
+        //upload link
+        var upload = document.createElement('a');
+        li.appendChild(document.createTextNode (" "))//add a space in between
+        li.appendChild(upload)//add the upload link to li
+
+        //add the li element to the ol
+        // recordingsList.appendChild(li);
+      }
+
+      $(".msger-send-btn").on('click', function(){
+          var input_quest = $.trim($("#questionInput").val())
+          if(input_quest===""){
+            alert("Please ask your question")
+            return false;
+          }else{
+            // alert(input_quest);
+            $("#chat-box-list").append(`<li class="mb-2 p-3 self">${input_quest}</li>`);
+            $('#chat-box-list').animate({scrollTop: $('#chat-box-list').prop("scrollHeight")}, 500);
+            $("#questionInput").val("");
+            $.ajax({
+                            url:"https://nlp.nuronics.com:6009/search",
+                                          data:{
+                                            "query":input_quest
+                                          },
+                            type:"POST",
+                            dataType:'json',
+                            beforeSend: function(){
+                                $("#chatInputMessage").text("Fetching answer..")
+                            },
+
+                            success:function(res){
+                              console.log(res);
+                              test_color1 ="#FAFFFE"
+
+                              if(res["Output"].length==0){
+                                appendAns = `<li class="mb-2 p-3 other" style="background-color:FAFFFE; position:relative"><small"> Not relevant question</small></li>`                                
+                                $("#chat-box-list").append(appendAns);
+                              }
+                              else{
+
+                                console.log(res["Output"][0]["answer"])
+
+                                opScore= parseFloat(res["Output"][0]["score"]).toFixed(2);
+                                opAns= res["Output"][0]["answer"];
+
+                                appendAns = `<li class="mb-2 p-3 other" style="background-color:FAFFFE; position:relative"><small style="position: absolute; bottom: 0; right: 0; border-radius: 14px; background-color: #62C106 !important; padding: 2px 5px !important; margin: 0px -10px -10px 0px;" class="p-1 bg-secondary text-white">${opScore}</small><small"> ${opAns}</small></li>`
+
+                                $("#chat-box-list").append(appendAns);
+                                $('#chat-box-list').animate({scrollTop: $('#chat-box-list').prop("scrollHeight")}, 500);
+                                $("#chatInputMessage").text("Answered");
+                              }
+
+                              },
+                            error:function(err){
+                                $("#chatInputMessage").text("Failed to fetch response.");
+                            }
+                });
+          }
+
+        });  
+
+    </script>
+    
+  </body>
+  </html>
+
+
